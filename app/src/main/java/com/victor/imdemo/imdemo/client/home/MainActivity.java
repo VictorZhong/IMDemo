@@ -1,7 +1,9 @@
-package com.victor.imdemo.imdemo;
+package com.victor.imdemo.imdemo.client.home;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.victor.imdemo.imdemo.R;
 
 public class MainActivity extends Activity {
 
