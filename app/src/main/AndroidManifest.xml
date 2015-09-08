@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.victor.imdemo.imdemo">
 
+    <uses-permission android:name="ANDROID.PERMISSION.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".client.home.CoreService">
+
+            <intent-filter>
+                <action android:name="android.intent.action.CoreService" />
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
