@@ -20,14 +20,12 @@ public class CoreService extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         Log.i("TAG","onBind");
-
         return null;
     }
 
     @Override
     public void onCreate() {
         Log.i("TAG","onCreate");
-
         super.onCreate();
     }
 
